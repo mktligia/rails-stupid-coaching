@@ -1,0 +1,13 @@
+<h1>Stupid coach</h1>
+
+<p>
+  <% if @question == "I am going to work" %>
+    <%= "Great!" %>
+  <%  elsif @question.ends_with?("?") %>
+    <%= "Silly question, get dressed and go to work!." %>
+  <% else %>
+    <%=  "I don't care, get dressed and go to work!" %>
+  <% end %>
+</p>
+
+<%= link_to "Ask", :ask %>
